@@ -1,0 +1,20 @@
+{
+  "name": "leetcode",
+  "type": "module",
+  "scripts": {
+    "prettier": "prettier --plugin-search-dir . --check .",
+    "format": "prettier --plugin-search-dir . --write .",
+    "precommit": "bun format && bun prettier",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "husky": "^8.0.3"
+  }
+}
